@@ -1,0 +1,10 @@
+Changes
+Makefile.PL
+MANIFEST
+README
+t/Tie-ExecHash.t
+t/pod-coverage.t
+t/pod-spelling.t
+t/pod-test.t
+lib/Tie/ExecHash.pm
+META.yml                                 Module meta-data (added by MakeMaker)
