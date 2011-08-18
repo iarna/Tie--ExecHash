@@ -97,11 +97,11 @@ line client for the Volity project. L<http://www.volity.org/>
 
 =head1 AUTHOR
 
-Andy Turner, E<lt>turner@mikomi.orgE<gt>
+Rebecca Turner, E<lt>winter@cpan.orgE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (C) 2005 by Andy Turner
+Copyright (C) 2005 by Rebecca Turner
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself, either Perl version 5.8.6 or,
