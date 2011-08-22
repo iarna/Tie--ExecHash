@@ -1,11 +1,10 @@
+# ABSTRACT: Give special powers to only some keys in a hash
 package Tie::ExecHash;
 use Tie::Hash;
-use base 'Tie::ExtraHash';
 use strict;
 use warnings;
-use vars qw/ $VERSION /;
 
-$VERSION = '0.90';
+BEGIN { our @ISA = qw( Tie::ExtraHash ); }
 
 sub STORE {
     if (    ref $_[2] eq 'ARRAY'
@@ -47,10 +46,6 @@ sub DELETE {
 
 1;
 __END__
-
-=head1 NAME
-
-Tie::ExecHash - Give special powers only to some keys
 
 =head1 SYNOPSIS
 
@@ -94,18 +89,3 @@ L<Tie::SentientHash>
 
 This was originally written as part of the development of "friv", the command
 line client for the Volity project. L<http://www.volity.org/>
-
-=head1 AUTHOR
-
-Rebecca Turner, E<lt>winter@cpan.orgE<gt>
-
-=head1 COPYRIGHT AND LICENSE
-
-Copyright (C) 2005 by Rebecca Turner
-
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself, either Perl version 5.8.6 or,
-at your option, any later version of Perl 5 you may have available.
-
-
-=cut
